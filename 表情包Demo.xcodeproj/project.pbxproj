@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25DAFE4C72BFDC14BBA1047D /* Pods____Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 898E361B2D34D16BABC41CEC /* Pods____Demo.framework */; };
+		7B27524E1DA7FEB900A43B83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B27524D1DA7FEB900A43B83 /* AppDelegate.swift */; };
+		7B2752501DA7FEB900A43B83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B27524F1DA7FEB900A43B83 /* ViewController.swift */; };
+		7B2752531DA7FEB900A43B83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2752511DA7FEB900A43B83 /* Main.storyboard */; };
+		7B2752551DA7FEB900A43B83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B2752541DA7FEB900A43B83 /* Assets.xcassets */; };
+		7B2752581DA7FEB900A43B83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2752561DA7FEB900A43B83 /* LaunchScreen.storyboard */; };
+		7B2752631DA7FF4500A43B83 /* HMEmoticon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7B2752621DA7FF4500A43B83 /* HMEmoticon.bundle */; };
+		7BC983861DB2225000E69023 /* YWEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC983851DB2225000E69023 /* YWEmoticon.swift */; };
+		7BC983881DB2252000E69023 /* YWEmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC983871DB2252000E69023 /* YWEmoticonPackage.swift */; };
+		7BEDE7881DB1D959002635EE /* YWEmonticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEDE7871DB1D959002635EE /* YWEmonticonManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00A044CB10CFE31DA3962E8B /* Pods-表情包Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-表情包Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-表情包Demo/Pods-表情包Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		7B27524A1DA7FEB900A43B83 /* 表情包Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "表情包Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B27524D1DA7FEB900A43B83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B27524F1DA7FEB900A43B83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B2752521DA7FEB900A43B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B2752541DA7FEB900A43B83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B2752571DA7FEB900A43B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B2752591DA7FEB900A43B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B2752621DA7FF4500A43B83 /* HMEmoticon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HMEmoticon.bundle; sourceTree = "<group>"; };
+		7BC983851DB2225000E69023 /* YWEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWEmoticon.swift; sourceTree = "<group>"; };
+		7BC983871DB2252000E69023 /* YWEmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWEmoticonPackage.swift; sourceTree = "<group>"; };
+		7BEDE7871DB1D959002635EE /* YWEmonticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWEmonticonManager.swift; sourceTree = "<group>"; };
+		898E361B2D34D16BABC41CEC /* Pods____Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods____Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6E272638F00AE1C1F7CD3AA /* Pods-表情包Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-表情包Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-表情包Demo/Pods-表情包Demo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B2752471DA7FEB900A43B83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DAFE4C72BFDC14BBA1047D /* Pods____Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31C14F0910C881D78CE70BB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00A044CB10CFE31DA3962E8B /* Pods-表情包Demo.debug.xcconfig */,
+				C6E272638F00AE1C1F7CD3AA /* Pods-表情包Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B2752411DA7FEB800A43B83 = {
+			isa = PBXGroup;
+			children = (
+				7B27525F1DA7FF0C00A43B83 /* Emoticon */,
+				7B27524C1DA7FEB900A43B83 /* 表情包Demo */,
+				7B27524B1DA7FEB900A43B83 /* Products */,
+				31C14F0910C881D78CE70BB3 /* Pods */,
+				99532E21C4203C1560CEDFD8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7B27524B1DA7FEB900A43B83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B27524A1DA7FEB900A43B83 /* 表情包Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B27524C1DA7FEB900A43B83 /* 表情包Demo */ = {
+			isa = PBXGroup;
+			children = (
+				7B27524D1DA7FEB900A43B83 /* AppDelegate.swift */,
+				7B27524F1DA7FEB900A43B83 /* ViewController.swift */,
+				7B2752511DA7FEB900A43B83 /* Main.storyboard */,
+				7B2752541DA7FEB900A43B83 /* Assets.xcassets */,
+				7B2752561DA7FEB900A43B83 /* LaunchScreen.storyboard */,
+				7B2752591DA7FEB900A43B83 /* Info.plist */,
+			);
+			path = "表情包Demo";
+			sourceTree = "<group>";
+		};
+		7B27525F1DA7FF0C00A43B83 /* Emoticon */ = {
+			isa = PBXGroup;
+			children = (
+				7BC983841DB2220700E69023 /* Model */,
+				7B2752621DA7FF4500A43B83 /* HMEmoticon.bundle */,
+				7BEDE7871DB1D959002635EE /* YWEmonticonManager.swift */,
+			);
+			name = Emoticon;
+			path = "表情包Demo/Emoticon";
+			sourceTree = "<group>";
+		};
+		7BC983841DB2220700E69023 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7BC983851DB2225000E69023 /* YWEmoticon.swift */,
+				7BC983871DB2252000E69023 /* YWEmoticonPackage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		99532E21C4203C1560CEDFD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				898E361B2D34D16BABC41CEC /* Pods____Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B2752491DA7FEB900A43B83 /* 表情包Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B27525C1DA7FEB900A43B83 /* Build configuration list for PBXNativeTarget "表情包Demo" */;
+			buildPhases = (
+				B6025FD54839A7152F827FD8 /* [CP] Check Pods Manifest.lock */,
+				7B2752461DA7FEB900A43B83 /* Sources */,
+				7B2752471DA7FEB900A43B83 /* Frameworks */,
+				7B2752481DA7FEB900A43B83 /* Resources */,
+				5C7ADAF92AF7F6DC55FB7F37 /* [CP] Embed Pods Frameworks */,
+				A2A0D2121217888759F3C3B6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "表情包Demo";
+			productName = "表情包Demo";
+			productReference = 7B27524A1DA7FEB900A43B83 /* 表情包Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B2752421DA7FEB800A43B83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Guangxi City Network Technology Co.,Ltd";
+				TargetAttributes = {
+					7B2752491DA7FEB900A43B83 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7B2752451DA7FEB800A43B83 /* Build configuration list for PBXProject "表情包Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B2752411DA7FEB800A43B83;
+			productRefGroup = 7B27524B1DA7FEB900A43B83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B2752491DA7FEB900A43B83 /* 表情包Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B2752481DA7FEB900A43B83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B2752631DA7FF4500A43B83 /* HMEmoticon.bundle in Resources */,
+				7B2752581DA7FEB900A43B83 /* LaunchScreen.storyboard in Resources */,
+				7B2752551DA7FEB900A43B83 /* Assets.xcassets in Resources */,
+				7B2752531DA7FEB900A43B83 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C7ADAF92AF7F6DC55FB7F37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-表情包Demo/Pods-表情包Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2A0D2121217888759F3C3B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-表情包Demo/Pods-表情包Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6025FD54839A7152F827FD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B2752461DA7FEB900A43B83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B2752501DA7FEB900A43B83 /* ViewController.swift in Sources */,
+				7BC983861DB2225000E69023 /* YWEmoticon.swift in Sources */,
+				7BC983881DB2252000E69023 /* YWEmoticonPackage.swift in Sources */,
+				7B27524E1DA7FEB900A43B83 /* AppDelegate.swift in Sources */,
+				7BEDE7881DB1D959002635EE /* YWEmonticonManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7B2752511DA7FEB900A43B83 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B2752521DA7FEB900A43B83 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B2752561DA7FEB900A43B83 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B2752571DA7FEB900A43B83 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B27525A1DA7FEB900A43B83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B27525B1DA7FEB900A43B83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B27525D1DA7FEB900A43B83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A044CB10CFE31DA3962E8B /* Pods-表情包Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "表情包Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guangxitongchengtech.dev.---Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7B27525E1DA7FEB900A43B83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6E272638F00AE1C1F7CD3AA /* Pods-表情包Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "表情包Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guangxitongchengtech.dev.---Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B2752451DA7FEB800A43B83 /* Build configuration list for PBXProject "表情包Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B27525A1DA7FEB900A43B83 /* Debug */,
+				7B27525B1DA7FEB900A43B83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B27525C1DA7FEB900A43B83 /* Build configuration list for PBXNativeTarget "表情包Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B27525D1DA7FEB900A43B83 /* Debug */,
+				7B27525E1DA7FEB900A43B83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B2752421DA7FEB800A43B83 /* Project object */;
+}
