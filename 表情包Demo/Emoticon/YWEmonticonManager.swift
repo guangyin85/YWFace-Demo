@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 //表情单例：为了便于表情是复用，使用单例，只加载一次表情数据
 class YWEmoticonManager {
     static let shared = YWEmoticonManager()
@@ -23,6 +24,50 @@ class YWEmoticonManager {
 }
 
 extension YWEmoticonManager {
+    /**
+     注意：应该倒序遍历 一次遍历可以把所有的图片替换完成
+     我[爱你]啊[笑哈哈]
+     r1 = {1,4}
+     r2 = {6,5}
+     - 顺序替换，替换前面的之后，后面的范围会失效
+     我[爱你的图片]啊[笑哈哈的图片]
+     */
+    
+    /// 将给定的字符串转换成属性文本
+    ///
+    /// - parameter string: 完整的字符串
+    ///
+    /// - returns: 属性文本
+    func emoticonString(string: String,font: UIFont) -> NSAttributedString {
+        let attrString = NSMutableAttributedString(string: string)
+        //1.建立正则表达式，过滤所有的表情文字
+        //() [] 都是正则表达式的关键字，如果需要参与匹配，需要转义
+        let pattern = "\\[.*?\\]"
+        guard let regx = try? NSRegularExpression(pattern: pattern, options: []) else{
+            return attrString
+        }
+        
+        //2.匹配所有项
+        let matches = regx.matches(in: string, options: [], range: NSRange(location: 0, length: attrString.length))
+        
+        //3.遍历所有匹配结果
+        for m in matches.reversed() {
+            let r = m.rangeAt(0)
+            let subStr = (attrString.string as NSString).substring(with: r)
+            
+            //使用subStr 查找对应的表情符号
+            if let em = YWEmoticonManager.shared.findEmoticon(string: subStr) {
+                //使用表情符号中的属性文本，替换原有的属性文本内容
+                attrString.replaceCharacters(in: r, with: em.imageText(font: font))
+            }
+        }
+        //4.统一设置一遍字符串的属性
+        attrString.addAttributes([NSFontAttributeName: font], range: NSRange(location: 0, length: attrString.length))
+        
+        return attrString
+    }
+    
+    
     
     /// 根据string [爱你] 在所有的表情符号中查找对应是表情模型
     ///
